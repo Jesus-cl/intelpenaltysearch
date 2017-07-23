@@ -1,0 +1,25 @@
+include 'BaijiCommonTypes.bjsc'  
+namespace java 'com.ctrip.flight.intelpenaltysearch'
+class HelloInfo{
+    string name;
+    string message;
+}
+
+/*define the request class*/
+class HelloRequestType{
+    string name;
+    string service;
+}
+
+/*define the response class*/
+class HelloResponseType{
+    BaijiCommonTypes.ResponseStatusType responseStatus;
+    HelloInfo helloInfo;
+}
+
+@serviceName='IntelPenaltySearch'
+@serviceNamespace='http://soa.ctrip.com/framework/soa/intelpenaltysearch/v1'
+service IntelPenaltySearch {
+    HelloResponseType hello(HelloRequestType request);
+    BaijiCommonTypes.CheckHealthResponseType checkHealth(BaijiCommonTypes.CheckHealthRequestType request);
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.ctrip.flight.aggregator</groupId>
+        <artifactId>intelpenaltysearch</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>domainmodel</artifactId>
+    <packaging>war</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ctrip.framework.clogging</groupId>
+            <artifactId>clogging-agent</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ctrip.framework</groupId>
+            <artifactId>vi</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.dianping.cat</groupId>
+            <artifactId>cat-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ctrip.platform</groupId>
+            <artifactId>ctrip-dal-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>qunar.tc.qconfig</groupId>
+            <artifactId>qconfig-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>qunar.common</groupId>
+            <artifactId>common-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ctrip.hermes</groupId>
+            <artifactId>hermes-producer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ctrip.hermes</groupId>
+            <artifactId>hermes-consumer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ctrip.hermes</groupId>
+            <artifactId>hermes-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ctriposs.baiji</groupId>
+            <artifactId>baiji-rpc-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ctriposs.baiji</groupId>
+            <artifactId>baiji-rpc-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ctriposs.baiji</groupId>
+            <artifactId>baiji-rpc-mobile-request-filter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ctriposs.baiji</groupId>
+            <artifactId>baiji-rpc-extensions</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ctrip.framework.demo</groupId>
+            <artifactId>hello-soa-common</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+
+</project>
